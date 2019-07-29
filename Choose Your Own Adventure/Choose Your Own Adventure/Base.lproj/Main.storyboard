@@ -1,0 +1,549 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Choose_Your_Own_Adventure" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xZ6-rk-032">
+                                <rect key="frame" x="144.66666666666666" y="501" width="86" height="39"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="86" id="F5L-eA-naJ"/>
+                                    <constraint firstAttribute="height" constant="39" id="ZF2-HM-dcl"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Thonburi-Bold" family="Thonburi" pointSize="20"/>
+                                <state key="normal" title="START">
+                                    <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                </state>
+                                <connections>
+                                    <segue destination="xkZ-co-VjL" kind="show" id="XQd-wr-LBw"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose  Your Own  Adventure" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lgF-gp-A8r">
+                                <rect key="frame" x="34" y="177" width="307" height="249"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="307" id="MsT-bo-eRv"/>
+                                    <constraint firstAttribute="height" constant="249" id="pxK-d4-iCz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Thonburi-Bold" family="Thonburi" pointSize="50"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="lgF-gp-A8r" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="133" id="4en-sF-9lJ"/>
+                            <constraint firstItem="lgF-gp-A8r" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Bm1-fE-CFk"/>
+                            <constraint firstItem="xZ6-rk-032" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rUx-lc-TGN"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="xZ6-rk-032" secondAttribute="bottom" constant="238" id="xiG-SH-F4M"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="130.40000000000001" y="116.00985221674877"/>
+        </scene>
+        <!--Character View Controller-->
+        <scene sceneID="wO4-En-hzu">
+            <objects>
+                <viewController id="xkZ-co-VjL" customClass="CharacterViewController" customModule="Choose_Your_Own_Adventure" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HqL-dx-boi">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="day:night" translatesAutoresizingMaskIntoConstraints="NO" id="Ipf-F8-2CK">
+                                <rect key="frame" x="-523.66666666666663" y="-106" width="1422.3333333333333" height="1024"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1024" id="cyU-JT-a04"/>
+                                    <constraint firstAttribute="width" constant="1422" id="yVC-Yu-JI5"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v6s-ng-gOK">
+                                <rect key="frame" x="122.66666666666669" y="466" width="130" height="78"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="78" id="VNs-na-4nF"/>
+                                    <constraint firstAttribute="width" constant="130" id="ck0-Vc-cDg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Thonburi-Bold" family="Thonburi" pointSize="50"/>
+                                <state key="normal" title="Night">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="yy6-x8-9OV" kind="show" id="39e-bt-x1D"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aIw-Lq-4GE">
+                                <rect key="frame" x="141" y="334" width="93" height="78"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="78" id="8nx-Uy-FnU"/>
+                                    <constraint firstAttribute="width" constant="93" id="ro1-YA-SeY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Thonburi-Bold" family="Thonburi" pointSize="50"/>
+                                <state key="normal" title="Day">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="7Ou-jI-WGe" kind="show" id="3GD-zW-xuU"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="or" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="3eR-8t-kTz">
+                                <rect key="frame" x="145" y="404" width="85" height="68"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="68" id="IWD-dt-8Ef"/>
+                                    <constraint firstAttribute="width" constant="85" id="fyj-Qw-Qpu"/>
+                                </constraints>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Thonburi-Bold" family="Thonburi" pointSize="50"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Ipf-F8-2CK" firstAttribute="centerX" secondItem="HqL-dx-boi" secondAttribute="centerX" id="Aeh-gk-APq"/>
+                            <constraint firstItem="v6s-ng-gOK" firstAttribute="top" secondItem="aIw-Lq-4GE" secondAttribute="bottom" constant="54" id="GFa-p0-jtw"/>
+                            <constraint firstItem="3eR-8t-kTz" firstAttribute="top" secondItem="O5F-mn-B5g" secondAttribute="top" constant="360" id="Tf9-ce-kYY"/>
+                            <constraint firstItem="aIw-Lq-4GE" firstAttribute="centerX" secondItem="HqL-dx-boi" secondAttribute="centerX" id="Vrc-ip-HDp"/>
+                            <constraint firstItem="aIw-Lq-4GE" firstAttribute="top" secondItem="O5F-mn-B5g" secondAttribute="top" constant="290" id="Yug-Vq-3Mh"/>
+                            <constraint firstItem="3eR-8t-kTz" firstAttribute="centerX" secondItem="aIw-Lq-4GE" secondAttribute="centerX" id="ZMa-NI-TjR"/>
+                            <constraint firstItem="Ipf-F8-2CK" firstAttribute="centerY" secondItem="HqL-dx-boi" secondAttribute="centerY" id="hfH-1S-Xnk"/>
+                            <constraint firstItem="aIw-Lq-4GE" firstAttribute="centerX" secondItem="v6s-ng-gOK" secondAttribute="centerX" id="nMO-DU-eHZ"/>
+                            <constraint firstItem="v6s-ng-gOK" firstAttribute="centerX" secondItem="HqL-dx-boi" secondAttribute="centerX" id="v9t-KV-mWs"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="O5F-mn-B5g"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HuV-2c-G2Q" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="940" y="116.00985221674877"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Aml-IC-FZt">
+            <objects>
+                <viewController id="yy6-x8-9OV" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lFB-g2-4m9">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="drink" translatesAutoresizingMaskIntoConstraints="NO" id="q8r-Ea-EV3">
+                                <rect key="frame" x="-523.66666666666663" y="0.0" width="1422.3333333333333" height="896"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="896" id="R5v-xT-ME2"/>
+                                    <constraint firstAttribute="width" constant="1422" id="cSf-hk-O3K"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wXw-RW-Iee">
+                                <rect key="frame" x="141" y="414" width="93" height="38"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="38" id="98U-uE-1wF"/>
+                                    <constraint firstAttribute="width" constant="93" id="NIt-dW-k17"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Thonburi-Bold" family="Thonburi" pointSize="25"/>
+                                <state key="normal" title="Drink it">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="85F-qn-7dx" kind="show" id="JXN-9C-kL4"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="or" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="SHR-tt-Dis">
+                                <rect key="frame" x="165" y="460" width="45" height="49"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="49" id="MLc-ki-RbV"/>
+                                    <constraint firstAttribute="width" constant="45" id="YwQ-iV-0FK"/>
+                                </constraints>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Thonburi-Bold" family="Thonburi" pointSize="25"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cIf-7y-Zy9">
+                                <rect key="frame" x="136" y="512" width="103" height="38"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="103" id="S0p-6h-PKU"/>
+                                    <constraint firstAttribute="height" constant="38" id="yae-bZ-cWZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Thonburi-Bold" family="Thonburi" pointSize="25"/>
+                                <state key="normal" title="Leave it">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="X30-4W-baR" kind="show" id="UQK-ZC-6W5"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You come across a drink" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8k6-l3-ZMR">
+                                <rect key="frame" x="34" y="40" width="307" height="122"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="307" id="WVI-o9-ghI"/>
+                                    <constraint firstAttribute="height" constant="122" id="t6s-xY-T4n"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Thonburi-Bold" family="Thonburi" pointSize="40"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="cIf-7y-Zy9" firstAttribute="centerX" secondItem="SHR-tt-Dis" secondAttribute="centerX" id="3Hd-LI-ufh"/>
+                            <constraint firstItem="SHR-tt-Dis" firstAttribute="top" secondItem="wXw-RW-Iee" secondAttribute="bottom" constant="8" symbolic="YES" id="5WU-ba-Leh"/>
+                            <constraint firstAttribute="bottom" secondItem="wXw-RW-Iee" secondAttribute="bottom" constant="360" id="BKZ-sf-bOT"/>
+                            <constraint firstItem="wXw-RW-Iee" firstAttribute="centerX" secondItem="SHR-tt-Dis" secondAttribute="centerX" id="EEd-7O-MNY"/>
+                            <constraint firstItem="cIf-7y-Zy9" firstAttribute="top" secondItem="SHR-tt-Dis" secondAttribute="bottom" constant="3" id="QA0-Gl-iNr"/>
+                            <constraint firstItem="8k6-l3-ZMR" firstAttribute="top" secondItem="lFB-g2-4m9" secondAttribute="topMargin" constant="-4" id="TdL-K6-Rhg"/>
+                            <constraint firstItem="8k6-l3-ZMR" firstAttribute="centerX" secondItem="lFB-g2-4m9" secondAttribute="centerX" id="ay9-hh-qxS"/>
+                            <constraint firstItem="8k6-l3-ZMR" firstAttribute="centerX" secondItem="q8r-Ea-EV3" secondAttribute="centerX" id="czC-hd-EmW"/>
+                            <constraint firstItem="wXw-RW-Iee" firstAttribute="centerX" secondItem="lFB-g2-4m9" secondAttribute="centerX" id="eOY-G4-0CL"/>
+                            <constraint firstItem="q8r-Ea-EV3" firstAttribute="top" secondItem="lFB-g2-4m9" secondAttribute="top" id="vsr-ux-sn6"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Lus-Sm-fL7"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0tJ-kc-6rw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1789.5999999999999" y="426.35467980295567"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="gld-OW-H0a">
+            <objects>
+                <viewController id="85F-qn-7dx" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qzq-MC-bE7">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WTZ-lQ-7br">
+                                <rect key="frame" x="273" y="739" width="86" height="39"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="39" id="uFh-sI-mHc"/>
+                                    <constraint firstAttribute="width" constant="86" id="usy-WF-bW1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Thonburi-Bold" family="Thonburi" pointSize="20"/>
+                                <state key="normal" title="NEXT">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="7Ou-jI-WGe" kind="show" id="UXS-o5-fxb"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="glass" translatesAutoresizingMaskIntoConstraints="NO" id="xRI-8t-WnL">
+                                <rect key="frame" x="67.666666666666686" y="500" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="07G-K5-UgS"/>
+                                    <constraint firstAttribute="width" constant="240" id="hPs-40-yxh"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You conk out and the next you know it, it's day" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Wk-3l-IuN">
+                                <rect key="frame" x="34" y="44" width="307" height="234"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="234" id="nzC-J8-jCS"/>
+                                    <constraint firstAttribute="width" constant="307" id="r1V-yn-KLz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Thonburi-Bold" family="Thonburi" pointSize="40"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="xRI-8t-WnL" firstAttribute="centerX" secondItem="qzq-MC-bE7" secondAttribute="centerX" id="7dY-rO-lqS"/>
+                            <constraint firstItem="WTZ-lQ-7br" firstAttribute="bottom" secondItem="xIH-SI-bMg" secondAttribute="bottom" id="Dbk-us-HSz"/>
+                            <constraint firstItem="4Wk-3l-IuN" firstAttribute="top" secondItem="xIH-SI-bMg" secondAttribute="top" id="Hyr-Q1-idZ"/>
+                            <constraint firstItem="4Wk-3l-IuN" firstAttribute="centerX" secondItem="qzq-MC-bE7" secondAttribute="centerX" id="Q6P-0S-rgs"/>
+                            <constraint firstAttribute="bottom" secondItem="xRI-8t-WnL" secondAttribute="bottom" constant="184" id="kSr-i2-h6Y"/>
+                            <constraint firstItem="WTZ-lQ-7br" firstAttribute="trailing" secondItem="qzq-MC-bE7" secondAttribute="trailingMargin" id="tCp-FP-Zyd"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="xIH-SI-bMg"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zwL-ge-VRn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2669.5999999999999" y="426.35467980295567"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="cEb-Ca-opy">
+            <objects>
+                <viewController id="7Ou-jI-WGe" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1Ce-1D-DSZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lake" translatesAutoresizingMaskIntoConstraints="NO" id="2xP-Sx-cTO">
+                                <rect key="frame" x="-523.66666666666663" y="-42" width="1422.3333333333333" height="896"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="1422" id="HCk-hD-2vx"/>
+                                    <constraint firstAttribute="height" constant="896" id="lgQ-OW-8ea"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9SG-1H-6jX">
+                                <rect key="frame" x="134.66666666666666" y="534" width="106" height="38"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="38" id="V0M-V1-9ja"/>
+                                    <constraint firstAttribute="width" constant="106" id="wn2-Yi-Q5K"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Thonburi-Bold" family="Thonburi" pointSize="25"/>
+                                <state key="normal" title="Jump in">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Tb3-fE-wHq" kind="show" id="Dgt-zL-tJU"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="or" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="xmb-dv-TEU">
+                                <rect key="frame" x="165" y="580" width="45" height="49"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="45" id="0QW-ho-9Wy"/>
+                                    <constraint firstAttribute="height" constant="49" id="cgL-Xb-nZ8"/>
+                                </constraints>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Thonburi-Bold" family="Thonburi" pointSize="25"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="95G-7M-ULo">
+                                <rect key="frame" x="134.66666666666666" y="645" width="106" height="38"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="106" id="SWp-ag-4cS"/>
+                                    <constraint firstAttribute="height" constant="38" id="pKt-pM-yfN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Thonburi-Bold" family="Thonburi" pointSize="25"/>
+                                <state key="normal" title="Leave">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="u99-of-SYx" kind="show" id="Kpf-gD-l3L"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You stumble upon a lake" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SGG-tY-e3b">
+                                <rect key="frame" x="34" y="18" width="307" height="204"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="307" id="I16-1f-VWk"/>
+                                    <constraint firstAttribute="height" constant="204" id="Jww-6R-3nN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Thonburi-Bold" family="Thonburi" pointSize="40"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="2xP-Sx-cTO" firstAttribute="centerY" secondItem="1Ce-1D-DSZ" secondAttribute="centerY" id="0Y5-SZ-lfB"/>
+                            <constraint firstItem="95G-7M-ULo" firstAttribute="centerX" secondItem="1Ce-1D-DSZ" secondAttribute="centerX" id="3Ri-Ag-wtx"/>
+                            <constraint firstItem="2xP-Sx-cTO" firstAttribute="top" secondItem="1Ce-1D-DSZ" secondAttribute="top" constant="-42" id="4Jl-Rm-8ER"/>
+                            <constraint firstItem="9SG-1H-6jX" firstAttribute="centerX" secondItem="1Ce-1D-DSZ" secondAttribute="centerX" id="6IB-dh-GAs"/>
+                            <constraint firstItem="xmb-dv-TEU" firstAttribute="top" secondItem="9SG-1H-6jX" secondAttribute="bottom" constant="8" symbolic="YES" id="NqZ-f8-aRV"/>
+                            <constraint firstAttribute="bottom" secondItem="xmb-dv-TEU" secondAttribute="bottom" constant="183" id="Or3-Fi-cui"/>
+                            <constraint firstItem="xmb-dv-TEU" firstAttribute="centerX" secondItem="1Ce-1D-DSZ" secondAttribute="centerX" id="Rxn-O3-PXD"/>
+                            <constraint firstItem="95G-7M-ULo" firstAttribute="top" secondItem="xmb-dv-TEU" secondAttribute="bottom" constant="16" id="W8x-aN-eeS"/>
+                            <constraint firstItem="xmb-dv-TEU" firstAttribute="centerX" secondItem="9SG-1H-6jX" secondAttribute="centerX" id="eOd-gE-wr8"/>
+                            <constraint firstItem="SGG-tY-e3b" firstAttribute="centerX" secondItem="1Ce-1D-DSZ" secondAttribute="centerX" id="mPo-51-Mx4"/>
+                            <constraint firstItem="xmb-dv-TEU" firstAttribute="centerX" secondItem="95G-7M-ULo" secondAttribute="centerX" id="mo7-mO-cuo"/>
+                            <constraint firstItem="2xP-Sx-cTO" firstAttribute="centerX" secondItem="1Ce-1D-DSZ" secondAttribute="centerX" id="uJ9-FQ-7jF"/>
+                            <constraint firstItem="SGG-tY-e3b" firstAttribute="top" secondItem="1Ce-1D-DSZ" secondAttribute="topMargin" constant="-26" id="zgM-9P-BFy"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="k2c-f0-1VL"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Kxn-Aw-lzG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1789.5999999999999" y="-229.06403940886702"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="w3m-Ug-ftP">
+            <objects>
+                <viewController id="X30-4W-baR" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1qG-0X-OOU">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="road2" translatesAutoresizingMaskIntoConstraints="NO" id="ZLQ-uN-pAY">
+                                <rect key="frame" x="-523.66666666666663" y="-42" width="1422.3333333333333" height="896"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="1422" id="DtX-fd-QnX"/>
+                                    <constraint firstAttribute="height" constant="896" id="T89-i9-7yu"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jmz-IM-jal">
+                                <rect key="frame" x="273" y="739" width="86" height="39"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="39" id="90u-uP-AfG"/>
+                                    <constraint firstAttribute="width" constant="86" id="bqh-J5-YDA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Thonburi-Bold" family="Thonburi" pointSize="20"/>
+                                <state key="normal" title="HOME">
+                                    <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="urG-lY-VMk"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You leave the drink there and head home" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cmb-Wo-r4l">
+                                <rect key="frame" x="34" y="285" width="307" height="182"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="307" id="Z4B-ea-N8e"/>
+                                    <constraint firstAttribute="height" constant="182" id="pi1-Et-WZP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Thonburi-Bold" family="Thonburi" pointSize="40"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ZLQ-uN-pAY" firstAttribute="centerY" secondItem="1qG-0X-OOU" secondAttribute="centerY" id="1c4-2z-P98"/>
+                            <constraint firstItem="ZLQ-uN-pAY" firstAttribute="centerX" secondItem="1qG-0X-OOU" secondAttribute="centerX" id="4Aj-AT-bvI"/>
+                            <constraint firstItem="cmb-Wo-r4l" firstAttribute="top" secondItem="ggH-Dl-21w" secondAttribute="top" constant="241" id="GgW-r3-mS7"/>
+                            <constraint firstItem="jmz-IM-jal" firstAttribute="bottom" secondItem="ggH-Dl-21w" secondAttribute="bottom" id="aXD-fA-Bmz"/>
+                            <constraint firstItem="jmz-IM-jal" firstAttribute="trailing" secondItem="1qG-0X-OOU" secondAttribute="trailingMargin" id="d3t-6u-TQq"/>
+                            <constraint firstItem="cmb-Wo-r4l" firstAttribute="centerX" secondItem="1qG-0X-OOU" secondAttribute="centerX" id="ebx-Qx-jZo"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ggH-Dl-21w"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Djd-XQ-CvB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2670" y="1081"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="pmr-sU-tkf">
+            <objects>
+                <viewController id="u99-of-SYx" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iFE-MH-rvO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="road" translatesAutoresizingMaskIntoConstraints="NO" id="RX6-Fe-0mD">
+                                <rect key="frame" x="-523.66666666666663" y="-42" width="1422.3333333333333" height="896"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="1422" id="bNL-j8-Yqw"/>
+                                    <constraint firstAttribute="height" constant="896" id="pIV-kD-GI9"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="el3-xI-Aee">
+                                <rect key="frame" x="273" y="739" width="86" height="39"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="86" id="jG5-S5-wNr"/>
+                                    <constraint firstAttribute="height" constant="39" id="kV6-Yy-HVF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Thonburi-Bold" family="Thonburi" pointSize="20"/>
+                                <state key="normal" title="HOME">
+                                    <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="tqT-P5-is1"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You leave the lake empty-handed" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aKW-4e-I39">
+                                <rect key="frame" x="34" y="44" width="307" height="182"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="307" id="gVg-hR-rtm"/>
+                                    <constraint firstAttribute="height" constant="182" id="scQ-Dc-j3S"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Thonburi-Bold" family="Thonburi" pointSize="40"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="aKW-4e-I39" firstAttribute="centerX" secondItem="iFE-MH-rvO" secondAttribute="centerX" id="Ofb-Z0-FCR"/>
+                            <constraint firstItem="aKW-4e-I39" firstAttribute="top" secondItem="4HA-aH-72b" secondAttribute="top" id="T0X-Wx-Clw"/>
+                            <constraint firstItem="el3-xI-Aee" firstAttribute="trailing" secondItem="iFE-MH-rvO" secondAttribute="trailingMargin" id="Utf-c9-nvF"/>
+                            <constraint firstItem="el3-xI-Aee" firstAttribute="bottom" secondItem="4HA-aH-72b" secondAttribute="bottom" id="YTN-lA-92a"/>
+                            <constraint firstItem="RX6-Fe-0mD" firstAttribute="centerY" secondItem="iFE-MH-rvO" secondAttribute="centerY" id="g8y-qy-p16"/>
+                            <constraint firstItem="RX6-Fe-0mD" firstAttribute="centerX" secondItem="iFE-MH-rvO" secondAttribute="centerX" id="xNO-P2-S8t"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="4HA-aH-72b"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vWi-4W-bre" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2669.5999999999999" y="-228.32512315270938"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="8uy-3b-tMd">
+            <objects>
+                <viewController id="Tb3-fE-wHq" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ivz-kN-smU">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rock" translatesAutoresizingMaskIntoConstraints="NO" id="b31-jF-95M">
+                                <rect key="frame" x="-97" y="-42" width="1422" height="896"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="1422" id="dvl-dJ-dOu"/>
+                                    <constraint firstAttribute="height" constant="896" id="kaU-g1-jQl"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VrI-n9-Yte">
+                                <rect key="frame" x="273" y="739" width="86" height="39"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="39" id="Due-gR-NzM"/>
+                                    <constraint firstAttribute="width" constant="86" id="dJY-NB-E7Y"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Thonburi-Bold" family="Thonburi" pointSize="20"/>
+                                <state key="normal" title="NEXT">
+                                    <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                </state>
+                                <connections>
+                                    <segue destination="yy6-x8-9OV" kind="show" id="ECm-2u-4eZ"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You hit the ground and knock out. You wake up when it's night" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ym6-dv-jnf">
+                                <rect key="frame" x="0.0" y="356" width="307" height="299"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="307" id="R6k-Rx-yIf"/>
+                                    <constraint firstAttribute="height" constant="299" id="YO0-O0-1nf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Thonburi-Bold" family="Thonburi" pointSize="40"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="zBG-d2-hRu" firstAttribute="trailing" secondItem="ym6-dv-jnf" secondAttribute="trailing" constant="68" id="GJH-Ku-NII"/>
+                            <constraint firstItem="VrI-n9-Yte" firstAttribute="top" secondItem="ym6-dv-jnf" secondAttribute="bottom" constant="84" id="Kvu-hE-rTB"/>
+                            <constraint firstItem="ym6-dv-jnf" firstAttribute="leading" secondItem="Ivz-kN-smU" secondAttribute="leading" id="Sfd-a8-qib"/>
+                            <constraint firstItem="VrI-n9-Yte" firstAttribute="trailing" secondItem="Ivz-kN-smU" secondAttribute="trailingMargin" id="UXa-VC-0Lc"/>
+                            <constraint firstItem="b31-jF-95M" firstAttribute="top" secondItem="Ivz-kN-smU" secondAttribute="top" constant="-42" id="djo-n7-Egd"/>
+                            <constraint firstItem="b31-jF-95M" firstAttribute="centerY" secondItem="Ivz-kN-smU" secondAttribute="centerY" id="mHu-OW-4dT"/>
+                            <constraint firstItem="b31-jF-95M" firstAttribute="leading" secondItem="Ivz-kN-smU" secondAttribute="leading" constant="-97" id="oED-rd-bYd"/>
+                            <constraint firstItem="ym6-dv-jnf" firstAttribute="top" secondItem="zBG-d2-hRu" secondAttribute="top" constant="312" id="tAB-7H-RFh"/>
+                            <constraint firstItem="VrI-n9-Yte" firstAttribute="bottom" secondItem="zBG-d2-hRu" secondAttribute="bottom" id="tpr-48-nOD"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="zBG-d2-hRu"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HCc-KX-MGF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2668" y="-883.74384236453204"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="day:night" width="720" height="720"/>
+        <image name="drink" width="573" height="807"/>
+        <image name="glass" width="393" height="207"/>
+        <image name="lake" width="1600" height="1233"/>
+        <image name="road" width="1000" height="1000"/>
+        <image name="road2" width="902" height="720"/>
+        <image name="rock" width="1138" height="807"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="UXS-o5-fxb"/>
+        <segue reference="ECm-2u-4eZ"/>
+        <segue reference="tqT-P5-is1"/>
+    </inferredMetricsTieBreakers>
+</document>
