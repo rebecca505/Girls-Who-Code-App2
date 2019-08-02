@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="g1s-3g-gfd">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Info-->
+        <scene sceneID="0co-gO-8o4">
+            <objects>
+                <viewController id="c77-DW-a7L" customClass="InfoViewController" customModule="Splash" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="InG-0i-oId">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="minimalistBackground1" translatesAutoresizingMaskIntoConstraints="NO" id="dBw-85-WaA">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="729"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How to Help:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="58N-Z9-Ccw">
+                                <rect key="frame" x="79" y="127" width="217" height="41"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="41" id="0zJ-iG-41u"/>
+                                    <constraint firstAttribute="width" constant="217" id="Tmr-bc-G5C"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="35"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Donate to these organizations:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VWy-Ra-ewM">
+                                <rect key="frame" x="43" y="365" width="289" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="289" id="Jhp-As-aMQ"/>
+                                    <constraint firstAttribute="height" constant="42" id="wBZ-nL-O6Y"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tRq-ez-Znz">
+                                <rect key="frame" x="36" y="477" width="194" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="194" id="2EP-Ks-Sog"/>
+                                    <constraint firstAttribute="height" constant="32" id="OaY-fG-bDJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
+                                <state key="normal" title="The Ocean Blue Project"/>
+                                <connections>
+                                    <action selector="oceanBlueProject:" destination="c77-DW-a7L" eventType="touchUpInside" id="xHK-qX-zik"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pc2-Mt-ksQ">
+                                <rect key="frame" x="278" y="477" width="65" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="IEC-6D-cmO"/>
+                                    <constraint firstAttribute="width" constant="65" id="Lb4-mv-ycD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
+                                <state key="normal" title="Oceana"/>
+                                <connections>
+                                    <action selector="oceana:" destination="c77-DW-a7L" eventType="touchUpInside" id="Ngs-im-hZ0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cjT-dQ-LKu">
+                                <rect key="frame" x="71" y="600" width="43" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="XIt-eg-6Kt"/>
+                                    <constraint firstAttribute="width" constant="43" id="yfV-sF-WZs"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
+                                <state key="normal" title="WWF"/>
+                                <connections>
+                                    <action selector="wwf:" destination="c77-DW-a7L" eventType="touchUpInside" id="Nyb-0w-TtB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6H7-LA-mMp">
+                                <rect key="frame" x="161" y="600" width="167" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="167" id="iBN-n8-2a8"/>
+                                    <constraint firstAttribute="height" constant="32" id="rI2-p1-fEP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
+                                <state key="normal" title="Ocean Conservancy"/>
+                                <connections>
+                                    <action selector="oceanConservancy:" destination="c77-DW-a7L" eventType="touchUpInside" id="6Kj-hb-TvF"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How to Help Generator" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8IN-gd-OWT">
+                                <rect key="frame" x="67.666666666666686" y="210" width="240" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="7St-Tt-KKG"/>
+                                    <constraint firstAttribute="height" constant="150" id="FaP-Rc-ZGy"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="6H7-LA-mMp" firstAttribute="top" secondItem="tRq-ez-Znz" secondAttribute="bottom" constant="91" id="0ng-3R-fRt"/>
+                            <constraint firstItem="VWy-Ra-ewM" firstAttribute="centerX" secondItem="8IN-gd-OWT" secondAttribute="centerX" id="1pl-CO-CTL"/>
+                            <constraint firstItem="58N-Z9-Ccw" firstAttribute="top" secondItem="evJ-aY-aBM" secondAttribute="top" constant="83" id="COX-nm-gUt"/>
+                            <constraint firstItem="tRq-ez-Znz" firstAttribute="top" secondItem="VWy-Ra-ewM" secondAttribute="bottom" constant="70" id="DOd-Tu-zxb"/>
+                            <constraint firstItem="VWy-Ra-ewM" firstAttribute="centerX" secondItem="InG-0i-oId" secondAttribute="centerX" id="J2S-RS-MF7"/>
+                            <constraint firstItem="dBw-85-WaA" firstAttribute="bottom" secondItem="evJ-aY-aBM" secondAttribute="bottom" id="JTY-lD-JBJ"/>
+                            <constraint firstItem="dBw-85-WaA" firstAttribute="top" secondItem="evJ-aY-aBM" secondAttribute="top" constant="-44" id="MNu-20-uOl"/>
+                            <constraint firstItem="pc2-Mt-ksQ" firstAttribute="baseline" secondItem="tRq-ez-Znz" secondAttribute="baseline" id="Opi-MN-3mx"/>
+                            <constraint firstItem="VWy-Ra-ewM" firstAttribute="top" secondItem="InG-0i-oId" secondAttribute="top" constant="365" id="QJC-b6-KlI"/>
+                            <constraint firstItem="pc2-Mt-ksQ" firstAttribute="leading" secondItem="tRq-ez-Znz" secondAttribute="trailing" constant="48" id="afC-tP-JZ9"/>
+                            <constraint firstItem="VWy-Ra-ewM" firstAttribute="centerX" secondItem="58N-Z9-Ccw" secondAttribute="centerX" id="afV-Ma-Vkp"/>
+                            <constraint firstItem="VWy-Ra-ewM" firstAttribute="top" secondItem="8IN-gd-OWT" secondAttribute="bottom" constant="5" id="hf0-QE-EuQ"/>
+                            <constraint firstAttribute="trailing" secondItem="dBw-85-WaA" secondAttribute="trailing" id="i2e-Hj-Gwp"/>
+                            <constraint firstItem="evJ-aY-aBM" firstAttribute="trailing" secondItem="6H7-LA-mMp" secondAttribute="trailing" constant="47" id="naO-LZ-UmJ"/>
+                            <constraint firstItem="6H7-LA-mMp" firstAttribute="baseline" secondItem="cjT-dQ-LKu" secondAttribute="baseline" id="nkb-xO-2fR"/>
+                            <constraint firstItem="6H7-LA-mMp" firstAttribute="leading" secondItem="cjT-dQ-LKu" secondAttribute="trailing" constant="47" id="vwa-k6-w7q"/>
+                            <constraint firstItem="dBw-85-WaA" firstAttribute="leading" secondItem="InG-0i-oId" secondAttribute="leading" id="yGk-h8-GWs"/>
+                            <constraint firstItem="evJ-aY-aBM" firstAttribute="trailing" secondItem="pc2-Mt-ksQ" secondAttribute="trailing" constant="32" id="zqc-43-IuL"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="evJ-aY-aBM"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Info" image="info icon" id="Pkz-Y0-NNT"/>
+                    <connections>
+                        <outlet property="howToHelpLabel" destination="8IN-gd-OWT" id="8F2-gy-sHy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Bor-m6-zly" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1719.2" y="943.5960591133005"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="1Qw-tv-Af9">
+            <objects>
+                <viewController id="JHJ-K0-3PA" customClass="HomeViewController" customModule="Splash" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5Te-cK-J2K">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Splash" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sEB-qh-msl">
+                                <rect key="frame" x="114.66666666666669" y="90" width="146" height="51"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="51" id="B1Y-CO-PaG"/>
+                                    <constraint firstAttribute="width" constant="146" id="kgH-Ra-AEN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="44"/>
+                                <color key="textColor" red="0.010111017458545484" green="0.066308518483925299" blue="0.31315434644670048" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pick up some trash and have a splash!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FfN-oK-ICY">
+                                <rect key="frame" x="54.666666666666657" y="556" width="266" height="67"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="67" id="RMG-yX-9Cg"/>
+                                    <constraint firstAttribute="width" constant="266" id="dmI-43-dms"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="20"/>
+                                <color key="textColor" red="0.0004021679240921827" green="0.09801452242987703" blue="0.46470494923857864" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="uLt-hQ-uoN">
+                                <rect key="frame" x="67.666666666666686" y="260" width="240" height="202"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="202" id="D6M-S5-DBx"/>
+                                    <constraint firstAttribute="width" constant="240" id="kis-40-kPS"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="sEB-qh-msl" firstAttribute="top" secondItem="D5y-hc-SvC" secondAttribute="top" constant="46" id="5Sb-aE-zVR"/>
+                            <constraint firstItem="FfN-oK-ICY" firstAttribute="centerX" secondItem="5Te-cK-J2K" secondAttribute="centerX" id="H3f-RD-M8l"/>
+                            <constraint firstItem="sEB-qh-msl" firstAttribute="centerX" secondItem="5Te-cK-J2K" secondAttribute="centerX" id="JKG-YN-tiD"/>
+                            <constraint firstItem="uLt-hQ-uoN" firstAttribute="centerX" secondItem="5Te-cK-J2K" secondAttribute="centerX" id="VYz-GT-hii"/>
+                            <constraint firstItem="FfN-oK-ICY" firstAttribute="top" secondItem="uLt-hQ-uoN" secondAttribute="bottom" constant="94" id="dsZ-Xm-oQt"/>
+                            <constraint firstItem="D5y-hc-SvC" firstAttribute="bottom" secondItem="FfN-oK-ICY" secondAttribute="bottom" constant="106" id="wo9-5T-JmS"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="D5y-hc-SvC"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Home" image="home icon" id="8XX-oz-sbY"/>
+                    <connections>
+                        <outlet property="earthImage" destination="uLt-hQ-uoN" id="P0Z-Ph-uIF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="U3x-PG-309" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-394.39999999999998" y="942.85714285714289"/>
+        </scene>
+        <!--AR-->
+        <scene sceneID="ext-oz-XtR">
+            <objects>
+                <viewController id="qhk-BB-ikQ" customClass="ViewController" customModule="Splash" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7ML-tF-bkQ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <arskView contentMode="scaleToFill" sceneName="Scene.sks" translatesAutoresizingMaskIntoConstraints="NO" id="MGY-hE-IQO">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                            </arskView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="MGY-hE-IQO" firstAttribute="centerY" secondItem="7ML-tF-bkQ" secondAttribute="centerY" id="P8r-gR-LlN"/>
+                            <constraint firstAttribute="bottom" secondItem="MGY-hE-IQO" secondAttribute="bottom" id="XGu-ej-Ha2"/>
+                            <constraint firstAttribute="trailing" secondItem="MGY-hE-IQO" secondAttribute="trailing" id="YBq-AP-XGb"/>
+                            <constraint firstItem="MGY-hE-IQO" firstAttribute="centerX" secondItem="7ML-tF-bkQ" secondAttribute="centerX" id="YoA-O2-7z0"/>
+                            <constraint firstItem="MGY-hE-IQO" firstAttribute="leading" secondItem="7ML-tF-bkQ" secondAttribute="leading" id="e6e-nI-h0Y"/>
+                            <constraint firstItem="MGY-hE-IQO" firstAttribute="top" secondItem="7ML-tF-bkQ" secondAttribute="top" id="l2k-gE-6kV"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="BtY-6a-cfU"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="AR" image="ar icon" id="xyc-fD-wLG"/>
+                    <connections>
+                        <outlet property="sceneView" destination="MGY-hE-IQO" id="XiH-gD-gfu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hAq-36-djh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="853" y="462"/>
+        </scene>
+        <!--Game-->
+        <scene sceneID="MxE-Up-cyN">
+            <objects>
+                <viewController id="qKJ-IF-n4N" customClass="GameViewController" customModule="Splash" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="twi-26-fMH" customClass="SKView">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ocean Facts:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JsU-b5-e9C">
+                                <rect key="frame" x="75" y="299" width="225" height="41"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="41" id="1yl-ZY-M2X"/>
+                                    <constraint firstAttribute="width" constant="225" id="an0-lM-c4n"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="35"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NBV-6P-BJS">
+                                <rect key="frame" x="67.666666666666686" y="367" width="240" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="j6o-PK-JPW"/>
+                                    <constraint firstAttribute="height" constant="150" id="tjW-yA-Ed2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="JsU-b5-e9C" firstAttribute="centerX" secondItem="twi-26-fMH" secondAttribute="centerX" id="jJt-Qi-Bny"/>
+                            <constraint firstItem="JsU-b5-e9C" firstAttribute="top" secondItem="1Oe-PD-m2j" secondAttribute="top" constant="255" id="m1l-G2-WEV"/>
+                            <constraint firstItem="NBV-6P-BJS" firstAttribute="top" secondItem="JsU-b5-e9C" secondAttribute="bottom" constant="27" id="s1a-gc-c3P"/>
+                            <constraint firstItem="JsU-b5-e9C" firstAttribute="centerX" secondItem="NBV-6P-BJS" secondAttribute="centerX" id="zoK-MG-1eX"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="1Oe-PD-m2j"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Game" image="dolphin icon" id="YCT-nZ-v3V"/>
+                    <connections>
+                        <outlet property="factLabel" destination="NBV-6P-BJS" id="bd5-h5-w8J"/>
+                        <outlet property="oceanFacts" destination="JsU-b5-e9C" id="SO5-NN-A8C"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7Oy-rK-Wvw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="852" y="-185.46798029556652"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="gdd-II-wOd">
+            <objects>
+                <tabBarController id="g1s-3g-gfd" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="KjI-yO-BdK">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="qKJ-IF-n4N" kind="relationship" relationship="viewControllers" id="v7b-ND-mUX"/>
+                        <segue destination="JHJ-K0-3PA" kind="relationship" relationship="viewControllers" id="sRy-i6-SKf"/>
+                        <segue destination="qhk-BB-ikQ" kind="relationship" relationship="viewControllers" id="6op-Ga-V09"/>
+                        <segue destination="c77-DW-a7L" kind="relationship" relationship="viewControllers" id="456-U8-Yyq"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wOZ-Fi-ZNF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1149" y="84"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ar icon" width="24" height="23"/>
+        <image name="dolphin icon" width="26" height="26"/>
+        <image name="home icon" width="24" height="23"/>
+        <image name="info icon" width="23" height="23"/>
+        <image name="minimalistBackground1" width="960" height="720"/>
+    </resources>
+    <color key="tintColor" red="0.36078431370000003" green="0.88235294119999996" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+</document>
